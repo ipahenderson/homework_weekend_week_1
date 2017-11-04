@@ -54,3 +54,8 @@ def remove_pet_by_name (shop, name)
      end
   end
 end
+
+def add_pet_to_stock (pet, new_pet)
+  pet[:pets].unshift(new_pet)
+  return pet[:pets]
+end
